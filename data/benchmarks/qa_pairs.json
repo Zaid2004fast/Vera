@@ -1,0 +1,408 @@
+[
+  {
+    "id": "ds-001",
+    "topic": "data_structures",
+    "question": "What is the time complexity of searching in a binary search tree in the worst case?",
+    "answer": "O(n) in the worst case when the tree is completely unbalanced or skewed, essentially becoming a linked list.",
+    "keywords": ["O(n)", "unbalanced", "skewed"]
+  },
+  {
+    "id": "ds-002",
+    "topic": "data_structures",
+    "question": "What is the difference between a stack and a queue?",
+    "answer": "A stack is LIFO last in first out while a queue is FIFO first in first out. Stack uses push and pop from the top. Queue uses enqueue at rear and dequeue from front.",
+    "keywords": ["LIFO", "FIFO"]
+  },
+  {
+    "id": "ds-003",
+    "topic": "data_structures",
+    "question": "What is a circular linked list?",
+    "answer": "A circular linked list is a linked list where the last node points back to the first node instead of null forming a circle. It allows continuous traversal and is used in round robin scheduling.",
+    "keywords": ["last node", "first node", "null", "circle"]
+  },
+  {
+    "id": "ds-004",
+    "topic": "data_structures",
+    "question": "What is the difference between a min-heap and a max-heap?",
+    "answer": "In a min-heap every parent node is less than or equal to its children so the root is the minimum element. In a max-heap every parent is greater than or equal to its children so the root is the maximum.",
+    "keywords": ["min-heap", "max-heap", "root", "minimum", "maximum"]
+  },
+  {
+    "id": "ds-005",
+    "topic": "data_structures",
+    "question": "What is the time complexity of inserting into a hash table?",
+    "answer": "O(1) average case. O(n) worst case when all keys collide into the same bucket.",
+    "keywords": ["O(1)", "average", "O(n)", "worst"]
+  },
+  {
+    "id": "ds-006",
+    "topic": "data_structures",
+    "question": "What is the difference between a doubly linked list and a singly linked list?",
+    "answer": "A singly linked list has nodes with one pointer to the next node. A doubly linked list has nodes with two pointers one to the next node and one to the previous node allowing traversal in both directions.",
+    "keywords": ["singly", "doubly", "previous", "next", "both directions"]
+  },
+  {
+    "id": "ds-007",
+    "topic": "data_structures",
+    "question": "What is a balanced binary tree?",
+    "answer": "A balanced binary tree is one where the height difference between left and right subtrees of any node is at most one. AVL trees and Red-Black trees are examples. Height is O(log n) guaranteeing O(log n) operations.",
+    "keywords": ["height", "AVL", "O(log n)", "subtree"]
+  },
+  {
+    "id": "ds-008",
+    "topic": "data_structures",
+    "question": "What is the difference between an array and a linked list?",
+    "answer": "Arrays store elements in contiguous memory with O(1) random access but O(n) insertion and deletion. Linked lists store elements as nodes with pointers allowing O(1) insertion at head but O(n) random access.",
+    "keywords": ["contiguous", "O(1)", "random access", "pointer"]
+  },
+  {
+    "id": "ds-009",
+    "topic": "data_structures",
+    "question": "What is a graph and how is it represented?",
+    "answer": "A graph is a collection of vertices and edges. It can be represented as an adjacency matrix which is O(V squared) space or an adjacency list which is O(V plus E) space. Adjacency list is preferred for sparse graphs.",
+    "keywords": ["vertices", "edges", "adjacency matrix", "adjacency list"]
+  },
+  {
+    "id": "ds-010",
+    "topic": "data_structures",
+    "question": "What is the time and space complexity of merge sort?",
+    "answer": "Merge sort has O(n log n) time complexity in all cases best average and worst. Space complexity is O(n) due to the temporary array used during merging.",
+    "keywords": ["O(n log n)", "all cases", "O(n)", "space"]
+  },
+  {
+    "id": "algo-001",
+    "topic": "algorithms",
+    "question": "What is the difference between BFS and DFS?",
+    "answer": "BFS breadth first search uses a queue and explores all neighbors before going deeper. It finds shortest path in unweighted graphs. DFS depth first search uses a stack or recursion and explores as deep as possible before backtracking. Both run in O(V plus E).",
+    "keywords": ["queue", "stack", "shortest path", "O(V plus E)", "BFS", "DFS"]
+  },
+  {
+    "id": "algo-002",
+    "topic": "algorithms",
+    "question": "What is dynamic programming and when do you use it?",
+    "answer": "Dynamic programming solves problems by breaking them into overlapping subproblems and storing results to avoid recomputation. Use it when the problem has optimal substructure and overlapping subproblems. Examples are Fibonacci, knapsack, and longest common subsequence.",
+    "keywords": ["overlapping subproblems", "optimal substructure", "memoization", "Fibonacci"]
+  },
+  {
+    "id": "algo-003",
+    "topic": "algorithms",
+    "question": "What is the worst case time complexity of quicksort and why?",
+    "answer": "Quicksort worst case is O(n squared) and occurs when the pivot is always the smallest or largest element such as when sorting an already sorted array. This creates unbalanced partitions of size 0 and n minus 1.",
+    "keywords": ["O(n squared)", "pivot", "unbalanced", "sorted array"]
+  },
+  {
+    "id": "algo-004",
+    "topic": "algorithms",
+    "question": "What is binary search and what is its time complexity?",
+    "answer": "Binary search finds an element in a sorted array by repeatedly halving the search space. It compares the target with the middle element and eliminates half the array. Time complexity is O(log n). The array must be sorted.",
+    "keywords": ["O(log n)", "sorted", "halving", "middle"]
+  },
+  {
+    "id": "algo-005",
+    "topic": "algorithms",
+    "question": "What is the difference between merge sort and quick sort?",
+    "answer": "Merge sort is always O(n log n) stable and uses O(n) extra space. Quick sort has O(n log n) average but O(n squared) worst case uses O(log n) space and is not stable but is faster in practice due to cache efficiency.",
+    "keywords": ["stable", "O(n log n)", "O(n squared)", "cache", "space"]
+  },
+  {
+    "id": "algo-006",
+    "topic": "algorithms",
+    "question": "What is Dijkstra's algorithm used for?",
+    "answer": "Dijkstra's algorithm finds the shortest path from a source vertex to all other vertices in a graph with non-negative edge weights. It uses a min-heap priority queue and runs in O((V plus E) log V).",
+    "keywords": ["shortest path", "non-negative", "priority queue", "O((V plus E) log V)"]
+  },
+  {
+    "id": "algo-007",
+    "topic": "algorithms",
+    "question": "What is a greedy algorithm?",
+    "answer": "A greedy algorithm makes the locally optimal choice at each step hoping to find a global optimum. It does not always produce the optimal solution but works for problems like minimum spanning tree with Kruskal and Prim and activity selection.",
+    "keywords": ["locally optimal", "global", "Kruskal", "Prim"]
+  },
+  {
+    "id": "algo-008",
+    "topic": "algorithms",
+    "question": "What is topological sorting?",
+    "answer": "Topological sorting gives a linear ordering of vertices in a directed acyclic graph DAG such that for every directed edge u to v, u comes before v. It is used in dependency resolution build systems and task scheduling. It can be done with DFS or Kahn's algorithm in O(V plus E).",
+    "keywords": ["DAG", "directed acyclic", "dependency", "O(V plus E)", "Kahn"]
+  },
+  {
+    "id": "algo-009",
+    "topic": "algorithms",
+    "question": "What is the sliding window technique?",
+    "answer": "Sliding window maintains a window of elements and slides it across the array to avoid recomputation. It converts O(n squared) brute force solutions to O(n). Used for maximum sum subarray of fixed size and longest substring without repeating characters.",
+    "keywords": ["O(n)", "window", "subarray", "O(n squared)"]
+  },
+  {
+    "id": "algo-010",
+    "topic": "algorithms",
+    "question": "What is the difference between divide and conquer and dynamic programming?",
+    "answer": "Both break problems into subproblems. Divide and conquer works on independent subproblems like merge sort and binary search. Dynamic programming works on overlapping subproblems and stores results to avoid recomputation like Fibonacci and knapsack.",
+    "keywords": ["independent", "overlapping", "store", "recomputation"]
+  },
+  {
+    "id": "os-001",
+    "topic": "operating_systems",
+    "question": "What is the difference between a process and a thread?",
+    "answer": "A process is an independent program with its own memory space. A thread is a unit of execution within a process. Threads share the same memory space as other threads in the same process. Creating a thread is faster and cheaper than creating a process.",
+    "keywords": ["memory space", "share", "independent", "cheaper"]
+  },
+  {
+    "id": "os-002",
+    "topic": "operating_systems",
+    "question": "What is a deadlock and what are its four necessary conditions?",
+    "answer": "A deadlock is when two or more processes each wait for a resource held by the other causing all to be stuck forever. Four conditions: mutual exclusion, hold and wait, no preemption, and circular wait. All four must hold simultaneously for deadlock to occur.",
+    "keywords": ["mutual exclusion", "hold and wait", "no preemption", "circular wait"]
+  },
+  {
+    "id": "os-003",
+    "topic": "operating_systems",
+    "question": "What is virtual memory?",
+    "answer": "Virtual memory allows processes to use more memory than physically available by storing parts on disk. The page table maps virtual addresses to physical addresses. A page fault occurs when the required page is not in memory and must be loaded from disk.",
+    "keywords": ["page table", "page fault", "disk", "virtual addresses", "physical"]
+  },
+  {
+    "id": "os-004",
+    "topic": "operating_systems",
+    "question": "What is the difference between paging and segmentation?",
+    "answer": "Paging divides memory into fixed-size pages eliminating external fragmentation but causing internal fragmentation. Segmentation divides memory into variable-size logical segments like code data and stack. Segmentation can cause external fragmentation.",
+    "keywords": ["fixed-size", "variable-size", "internal fragmentation", "external fragmentation"]
+  },
+  {
+    "id": "os-005",
+    "topic": "operating_systems",
+    "question": "What is the difference between mutex and semaphore?",
+    "answer": "A mutex is a locking mechanism owned by the thread that acquired it and only that thread can release it used for mutual exclusion. A semaphore is a signaling mechanism with a counter that can be used by any thread. Binary semaphore is similar to mutex but counting semaphore allows multiple threads.",
+    "keywords": ["mutex", "semaphore", "owned", "counting", "binary", "mutual exclusion"]
+  },
+  {
+    "id": "os-006",
+    "topic": "operating_systems",
+    "question": "What is round robin CPU scheduling?",
+    "answer": "Round robin assigns a fixed time quantum to each process in a circular queue. It is preemptive and fair. If the quantum is too large it behaves like FCFS. If too small excessive context switching adds overhead. It is suitable for time-sharing systems.",
+    "keywords": ["time quantum", "preemptive", "circular", "context switching", "FCFS"]
+  },
+  {
+    "id": "os-007",
+    "topic": "operating_systems",
+    "question": "What is thrashing in operating systems?",
+    "answer": "Thrashing occurs when a process spends more time paging swapping pages in and out of memory than executing useful work because it does not have enough frames allocated. The working set model helps prevent thrashing by allocating enough frames for a process's active pages.",
+    "keywords": ["paging", "frames", "working set", "swapping"]
+  },
+  {
+    "id": "os-008",
+    "topic": "operating_systems",
+    "question": "What is a race condition?",
+    "answer": "A race condition occurs when two or more threads access shared data concurrently and the final outcome depends on the order of execution. It leads to unpredictable results. It is prevented using synchronization mechanisms like mutexes semaphores and monitors.",
+    "keywords": ["shared data", "concurrent", "order", "synchronization", "mutex"]
+  },
+  {
+    "id": "db-001",
+    "topic": "databases",
+    "question": "What is database normalization and why is it important?",
+    "answer": "Normalization organizes a database to reduce data redundancy and improve data integrity by decomposing tables into smaller related tables. It follows normal forms 1NF 2NF 3NF and BCNF. It prevents update anomalies and inconsistency.",
+    "keywords": ["redundancy", "integrity", "1NF", "2NF", "3NF", "anomalies"]
+  },
+  {
+    "id": "db-002",
+    "topic": "databases",
+    "question": "What is the difference between a clustered and non-clustered index?",
+    "answer": "A clustered index determines the physical order of data in the table and there can be only one per table. A non-clustered index stores pointers to the actual data rows and a table can have multiple non-clustered indexes.",
+    "keywords": ["physical order", "one per table", "pointers", "multiple"]
+  },
+  {
+    "id": "db-003",
+    "topic": "databases",
+    "question": "What are ACID properties in databases?",
+    "answer": "ACID stands for Atomicity meaning all or nothing, Consistency meaning database goes from one valid state to another, Isolation meaning concurrent transactions do not interfere, and Durability meaning committed changes are permanent even after crashes.",
+    "keywords": ["Atomicity", "Consistency", "Isolation", "Durability", "committed"]
+  },
+  {
+    "id": "db-004",
+    "topic": "databases",
+    "question": "What is the difference between SQL and NoSQL databases?",
+    "answer": "SQL databases are relational use structured schemas and support ACID transactions. Examples are MySQL and PostgreSQL. NoSQL databases are non-relational with flexible schemas and sacrifice some ACID properties for scalability. Types include document key-value column-family and graph stores.",
+    "keywords": ["relational", "schema", "ACID", "NoSQL", "scalability", "document"]
+  },
+  {
+    "id": "db-005",
+    "topic": "databases",
+    "question": "What is the difference between INNER JOIN and LEFT JOIN?",
+    "answer": "INNER JOIN returns only rows where there is a match in both tables. LEFT JOIN returns all rows from the left table and matching rows from the right table with NULL for non-matching rows on the right.",
+    "keywords": ["INNER JOIN", "LEFT JOIN", "match", "NULL", "all rows"]
+  },
+  {
+    "id": "net-001",
+    "topic": "networks",
+    "question": "What is the difference between TCP and UDP?",
+    "answer": "TCP is connection-oriented reliable ordered and uses a three-way handshake. It guarantees delivery and is used for HTTP email and file transfer. UDP is connectionless unreliable and faster with no delivery guarantees. It is used for video streaming gaming and DNS.",
+    "keywords": ["connection-oriented", "reliable", "three-way handshake", "connectionless", "UDP", "TCP"]
+  },
+  {
+    "id": "net-002",
+    "topic": "networks",
+    "question": "What is the OSI model and its 7 layers?",
+    "answer": "The OSI model has 7 layers from bottom to top: Physical, Data Link, Network, Transport, Session, Presentation, Application. Physical transmits raw bits. Data Link handles framing and MAC addresses. Network handles IP routing. Transport handles TCP and UDP. Application handles HTTP DNS and SMTP.",
+    "keywords": ["Physical", "Data Link", "Network", "Transport", "Application", "7 layers"]
+  },
+  {
+    "id": "net-003",
+    "topic": "networks",
+    "question": "What is DNS and how does it work?",
+    "answer": "DNS Domain Name System translates domain names to IP addresses. Resolution goes through local cache then OS cache then recursive resolver then root nameservers then TLD nameservers then authoritative nameservers. TTL determines how long the result is cached.",
+    "keywords": ["Domain Name", "IP addresses", "recursive resolver", "TTL", "nameservers"]
+  },
+  {
+    "id": "oop-001",
+    "topic": "oop",
+    "question": "What are the four pillars of object oriented programming?",
+    "answer": "Encapsulation, Abstraction, Inheritance, Polymorphism.",
+    "keywords": ["encapsulation", "abstraction", "inheritance", "polymorphism"]
+  },
+  {
+    "id": "oop-002",
+    "topic": "oop",
+    "question": "What is the difference between method overloading and method overriding?",
+    "answer": "Overloading is compile-time polymorphism with same method name but different parameters. Overriding is runtime polymorphism where a child class provides its own implementation of a parent method with the same signature.",
+    "keywords": ["overloading", "overriding", "compile-time", "runtime", "child"]
+  },
+  {
+    "id": "oop-003",
+    "topic": "oop",
+    "question": "What is the Single Responsibility Principle?",
+    "answer": "A class should have only one reason to change, meaning it should have only one job or responsibility.",
+    "keywords": ["one reason", "responsibility", "change", "single"]
+  },
+  {
+    "id": "oop-004",
+    "topic": "oop",
+    "question": "What is the difference between an abstract class and an interface?",
+    "answer": "An abstract class can have both abstract and concrete methods and a class can only inherit one. An interface defines only method contracts and a class can implement multiple interfaces.",
+    "keywords": ["abstract", "interface", "multiple", "concrete", "inherit"]
+  },
+  {
+    "id": "oop-005",
+    "topic": "oop",
+    "question": "What is the Observer design pattern?",
+    "answer": "Observer defines a one-to-many dependency so when one object changes state all dependents are notified automatically. Used in event systems and MVC.",
+    "keywords": ["one-to-many", "notified", "event", "dependents"]
+  },
+  {
+    "id": "sd-001",
+    "topic": "system_design",
+    "question": "What is the difference between horizontal and vertical scaling?",
+    "answer": "Vertical scaling adds more power to an existing machine such as more CPU or RAM. Horizontal scaling adds more machines to distribute load. Horizontal scaling is more fault tolerant.",
+    "keywords": ["vertical", "horizontal", "machines", "fault tolerant"]
+  },
+  {
+    "id": "sd-002",
+    "topic": "system_design",
+    "question": "What is a load balancer and what does it do?",
+    "answer": "A load balancer distributes incoming requests across multiple servers to prevent any single server from being overwhelmed. Common algorithms include round robin and least connections.",
+    "keywords": ["distributes", "requests", "servers", "round robin"]
+  },
+  {
+    "id": "sd-003",
+    "topic": "system_design",
+    "question": "What is caching and what are common eviction policies?",
+    "answer": "Caching stores frequently accessed data in fast memory to reduce latency and database load. Common eviction policies are LRU Least Recently Used and LFU Least Frequently Used and TTL Time To Live.",
+    "keywords": ["LRU", "LFU", "TTL", "eviction", "latency"]
+  },
+  {
+    "id": "sd-004",
+    "topic": "system_design",
+    "question": "What is the CAP theorem?",
+    "answer": "CAP theorem states a distributed system can only guarantee two of three: Consistency, Availability, and Partition Tolerance. Since partition tolerance is necessary, systems choose between CP and AP.",
+    "keywords": ["Consistency", "Availability", "Partition Tolerance", "distributed"]
+  },
+  {
+    "id": "sd-005",
+    "topic": "system_design",
+    "question": "What is database sharding?",
+    "answer": "Database sharding partitions data across multiple databases horizontally using a shard key. It improves write performance and scalability but complicates joins and transactions.",
+    "keywords": ["partitions", "shard key", "horizontally", "scalability"]
+  },
+  {
+    "id": "arch-001",
+    "topic": "computer_architecture",
+    "question": "What is pipelining in CPU design?",
+    "answer": "Pipelining divides instruction execution into stages and processes multiple instructions simultaneously one in each stage giving near one instruction per cycle throughput.",
+    "keywords": ["stages", "simultaneously", "instruction", "throughput"]
+  },
+  {
+    "id": "arch-002",
+    "topic": "computer_architecture",
+    "question": "What is the memory hierarchy in computer architecture?",
+    "answer": "Memory hierarchy organizes storage by speed and cost: registers fastest and smallest, then L1 L2 L3 cache, then RAM main memory, then secondary storage SSD or HDD slowest and largest.",
+    "keywords": ["registers", "cache", "RAM", "hierarchy", "speed"]
+  },
+  {
+    "id": "comp-001",
+    "topic": "compilers",
+    "question": "What are the main phases of a compiler?",
+    "answer": "Lexical analysis, syntax analysis or parsing, semantic analysis, intermediate code generation, optimization, and code generation.",
+    "keywords": ["lexical", "parsing", "semantic", "optimization", "code generation"]
+  },
+  {
+    "id": "comp-002",
+    "topic": "compilers",
+    "question": "What is the difference between a compiler and an interpreter?",
+    "answer": "A compiler translates the entire source program to machine code before execution. An interpreter reads and executes source code line by line. Compilers produce faster programs. Interpreters are easier to debug.",
+    "keywords": ["compiler", "interpreter", "machine code", "line by line"]
+  },
+  {
+    "id": "se-001",
+    "topic": "software_engineering",
+    "question": "What is the difference between unit testing and integration testing?",
+    "answer": "Unit testing tests individual functions or methods in isolation. Integration testing verifies that multiple components work together correctly.",
+    "keywords": ["unit", "integration", "isolation", "components", "together"]
+  },
+  {
+    "id": "se-002",
+    "topic": "software_engineering",
+    "question": "What is the difference between Agile and Waterfall?",
+    "answer": "Waterfall follows phases sequentially and each phase must complete before the next begins. Agile delivers software in short iterations called sprints and adapts to changing requirements through frequent feedback.",
+    "keywords": ["waterfall", "agile", "sprints", "iterations", "sequential"]
+  },
+  {
+    "id": "sec-001",
+    "topic": "security",
+    "question": "What is SQL injection and how do you prevent it?",
+    "answer": "SQL injection inserts malicious SQL into input fields to manipulate database queries. Prevented by using parameterized queries or prepared statements never string concatenation.",
+    "keywords": ["SQL injection", "parameterized queries", "prepared statements", "malicious"]
+  },
+  {
+    "id": "sec-002",
+    "topic": "security",
+    "question": "What is the difference between symmetric and asymmetric encryption?",
+    "answer": "Symmetric encryption uses the same key for encryption and decryption and is fast. Asymmetric encryption uses a public key to encrypt and private key to decrypt and solves the key distribution problem.",
+    "keywords": ["symmetric", "asymmetric", "public key", "private key", "same key"]
+  },
+  {
+    "id": "web-001",
+    "topic": "web_development",
+    "question": "What is the difference between GET and POST HTTP methods?",
+    "answer": "GET retrieves data and is idempotent and cacheable with parameters in the URL. POST sends data to create a resource with parameters in the request body and is not idempotent.",
+    "keywords": ["GET", "POST", "idempotent", "body", "URL"]
+  },
+  {
+    "id": "web-002",
+    "topic": "web_development",
+    "question": "What is the DOM?",
+    "answer": "The DOM Document Object Model is a tree representation of the HTML document that JavaScript can manipulate to dynamically update content structure and styles.",
+    "keywords": ["Document Object Model", "tree", "HTML", "JavaScript", "manipulate"]
+  },
+  {
+    "id": "ml-001",
+    "topic": "machine_learning",
+    "question": "What is the difference between overfitting and underfitting?",
+    "answer": "Overfitting occurs when the model learns training data too well including noise and performs poorly on new data. Underfitting occurs when the model is too simple to capture the underlying pattern.",
+    "keywords": ["overfitting", "underfitting", "training data", "noise", "simple"]
+  },
+  {
+    "id": "ml-002",
+    "topic": "machine_learning",
+    "question": "What is the difference between supervised and unsupervised learning?",
+    "answer": "Supervised learning trains on labeled data with input-output pairs and is used for classification and regression. Unsupervised learning finds patterns in unlabeled data and is used for clustering.",
+    "keywords": ["supervised", "unsupervised", "labeled", "unlabeled", "clustering"]
+  }
+]
