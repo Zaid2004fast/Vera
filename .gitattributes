@@ -1,0 +1,2 @@
+backend/db/vera.db merge=ours
+chroma_data/** merge=ours
